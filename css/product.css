@@ -1,0 +1,368 @@
+﻿@charset "utf-8";
+/*
+    制作时间：2016.3.18
+    作者：王勇
+    用途：天龙化工微站产品列表页样式
+*/
+
+body{
+    background:#f5f5f5;
+}
+.allMain{
+    width:100%;
+    height:auto;
+    background:rgb(245,245,245);
+    position:relative;
+}
+/*头部部分*/
+.head{
+    width:100%;
+    height:3.4rem;
+    background:#0073bc;
+    line-height:3.4rem;
+}
+.head a{
+    float:left;
+    height:3.4rem;
+    display:inline-block;
+}
+.head a.back{
+    width:8%;
+    background:url(../images/list/back.png) no-repeat center;
+    background-size:50% 50%;
+}
+.head h2{
+    width:80%;
+    height:3.4rem;
+    color:#fff;
+    font-size:1.4rem;
+    text-align:center;
+    float:left;
+}
+.head a.listMenuV{
+    width:12%;
+    background:url(../images/list/menu.png) no-repeat center;
+    background-size:50% 50%;
+}
+@media screen and (min-width:360px){
+.head a.listMenuV{
+    width:12%;
+    background:url(../images/list/menu.png) no-repeat center;
+    background-size:48% 43%;
+}
+}
+.head a.listMenuS{
+    width:12%;
+    background:url(../images/list/close.png) no-repeat center;
+    background-size:50% 50%;
+}
+
+/*下拉部分*/
+.xiala{
+    width:100%;
+    height:auto;
+    line-height:3rem;
+}
+.xiala a.btnV{
+    width:97%;
+    height:3rem;
+    color:#333;
+    display:block;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding-left:3%;
+    border-bottom:1px solid #eeeeee;
+    background:url(../images/list/listPull_2.png) no-repeat 97% center;
+    background-size:6% 30%; 
+}
+/*.xiala a.btnV i{
+    width:5%;
+    height:3rem;
+    display:inline-block;
+    float:right;
+    margin-right:3%;
+    
+}*/
+.xiala a.btnS{
+    width:97%;
+    height:3rem;
+    color:#333;
+    display:block;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding-left:3%;
+    border-bottom:1px solid #eeeeee;
+    background:url(../images/list/listPull_1.png) no-repeat 97% center;
+    background-size:6% 30%; 
+}
+/*.xiala a.btnS{
+    width:5%;
+    height:3rem;
+    display:inline-block;
+    float:right;
+    margin-right:3%;
+    
+}*/
+.xiala ul{
+    width:100%;
+    height:auto;
+    background:#fff;
+    position:absolute;
+    z-index:3;
+    display:none;
+    box-shadow:0px 0px 10px rgba(204,204,204,0.75);  
+}
+.xiala ul li{
+    width:97%;
+    height:3rem;
+    line-height:3rem;
+    background:#fff;
+    display:block;
+    padding-left:3%;
+    color:#999;
+    font-size:1.2rem;
+    font-weight:bold;
+    border-bottom:1px solid #eeeeee;
+}
+.xiala ul li:hover{
+    color:#fff;
+    background:#f1594b;
+}
+.xiala ul li:active{
+    color:#fff;
+    background:#f1594b;
+}
+
+
+/*产品中心部分*/
+.productList{
+    width:100%;
+    height:auto;
+    background:#fff;
+    margin-bottom:10rem;
+}
+.productList ul{
+    width:96%;
+    height:auto;
+    margin:0px auto;
+}
+.productList ul li{
+    width:46%;
+    height:auto;
+    float:left;
+    margin:14px 2% 6px 2%;
+}
+.productList ul li a{
+    display:block;
+    width:100%;
+    height:auto;
+}
+.productList ul li a img {
+    width:100%;
+    height:auto;
+    max-width:290px;
+    max-height:225px;
+}
+.productList ul li a span {
+    display:block;
+    height:3rem;
+    line-height:3rem;
+    overflow:hidden;
+    font-size:1.4rem;
+    color:#333333;
+}
+/*底部导航*/
+.foots{
+    width:100%;
+    height:6rem;
+    border-top:1px solid #e5e5e5;
+    padding:5px 0px;
+    background:#fff;
+    margin-top:3rem;
+}
+.foot{
+    width:100%;
+    height:6rem;
+    position:fixed;
+    left:0;
+    bottom:0;
+    border-top:1px solid #e5e5e5;
+    padding:5px 0px;
+    background:#fff;
+}
+.foot a{
+    float:left;
+    text-align:center;
+    color:#999;
+    font-size:1.1rem;
+    position:relative;
+}
+.foot a.footNav{
+    width:18%;
+    height:auto;
+}
+.foot a.footNavOther{
+    width:28%;
+    height:auto;
+}
+.foot a.footNav img{
+    width:46%;
+    height:auto;
+}
+.foot a.footNavOther img{
+    width:37%;
+    height:auto;
+}
+.foot a img{
+    margin:0.6rem auto 0.5rem auto;
+    display:block;
+}
+.foot a b{
+    width:100%;
+    height:1.6rem;
+    margin-top:80%;
+}
+.foot a img.footNavO{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    top:-58%;
+    z-index:0;
+}
+a img.footNavt{
+    position:relative;
+    z-index:1;
+}
+
+/*右侧滑出导航菜单*/
+.righMenu{
+    width:70%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:100%;
+}
+.righMenu ul.toRight{
+    width:100%;
+    height:100%;
+    background:#202122;
+    padding-top:3rem;
+}
+.righMenu ul.toRight li{
+    width:95%;
+    height:3rem;
+    line-height:3rem;
+    font-size:1.4rem;
+    padding-left:5%;
+}
+.righMenu ul.toRight li.click{
+    background:#111;
+}
+.righMenu ul.toRight li:nth-of-type(even){
+    border-top:1px solid #272727;
+    border-bottom:1px solid #272727;
+}
+.righMenu ul.toRight li:hover,.righMenu ul.toRight li:active{
+    background:#111;
+}
+.righMenu ul.toRight li a{
+    width:100%;
+    height:3rem;
+    display:block;
+    color:#999999;
+}
+.righMenu ul.toRight li a i.foucs{
+    width:5%;
+    height:29%;
+    display:inline-block;
+    border:1px solid #e0e0e0;
+    border-radius:50%;
+    background:#e0e0e0;
+    margin:0px 6%;
+}
+.righMenu ul.toRight li a i.blur{
+    width:5%;
+    height:29%;
+    display:inline-block;
+    border:1px solid #e0e0e0;
+    border-radius:50%;
+    margin:0px 6%;
+}
+
+
+/*产品详情部分*/
+.productCommon{
+    width:100%;
+    height:auto;
+}
+.productCommon .comPic,.productCommon .comText{
+    width:94%;
+    height:auto;
+    background:#fff;
+    padding:0.7rem 3%;
+    margin-top:10px;
+}
+.productCommon .comPic img{
+    width:100%;
+    height:auto;
+}
+.productCommon .comPic h3{
+    height:2.4rem;
+    line-height:2.4rem;
+    overflow:hidden;
+    color:#0073bc;
+    font-size:1.4rem;
+    text-align:center;
+}
+.productCommon .comText h4{
+    height:2.4rem;
+    line-height:2.4rem;
+    overflow:hidden;
+    color:#0073bc;
+    font-size:1.4rem;
+    margin-top:2rem;
+}
+.productCommon .comText p{
+    font-size:1.2rem;
+    line-height:1.8rem;
+    overflow:hidden;
+    color:#333;
+    padding-left:6%;
+    text-indent:1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

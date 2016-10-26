@@ -1,0 +1,514 @@
+﻿
+@charset "utf-8";
+/*
+    制作时间：2016.3.19
+    作者：王勇
+    用途：天龙化工微站公司简介、联系我们、微留言样式
+*/
+
+body{
+    background:#f5f5f5;
+}
+.allMain{
+    width:100%;
+    height:auto;
+    background:rgb(245,245,245);
+    position:relative;
+}
+/*头部部分*/
+.head{
+    width:100%;
+    height:3.4rem;
+    background:#0073bc;
+    line-height:3.4rem;
+}
+.head a{
+    float:left;
+    height:3.4rem;
+    display:inline-block;
+}
+.head a.back{
+    width:8%;
+    background:url(../images/list/back.png) no-repeat center;
+    background-size:50% 50%;
+}
+.head h2{
+    width:80%;
+    height:3.4rem;
+    color:#fff;
+    font-size:1.4rem;
+    text-align:center;
+    float:left;
+}
+.head a.listMenuV{
+    width:12%;
+    background:url(../images/list/menu.png) no-repeat center;
+    background-size:50% 50%;
+}
+@media screen and (min-width:360px){
+.head a.listMenuV{
+    width:12%;
+    background:url(../images/list/menu.png) no-repeat center;
+    background-size:48% 43%;
+}
+}
+.head a.listMenuS{
+    width:12%;
+    background:url(../images/list/close.png) no-repeat center;
+    background-size:50% 50%;
+}
+
+/*下拉部分*/
+.xiala{
+    width:100%;
+    height:auto;
+    line-height:3rem;
+}
+.xiala a.btnV{
+    width:97%;
+    height:3rem;
+    color:#333;
+    display:block;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding-left:3%;
+    border-bottom:1px solid #eeeeee;
+    background:url(../images/list/listPull_2.png) no-repeat 97% center;
+    background-size:6% 30%; 
+}
+/*.xiala a.btnV i{
+    width:5%;
+    height:3rem;
+    display:inline-block;
+    float:right;
+    margin-right:3%;
+    
+}*/
+.xiala a.btnS{
+    width:97%;
+    height:3rem;
+    color:#333;
+    display:block;
+    font-size:1.2rem;
+    font-weight:bold;
+    padding-left:3%;
+    border-bottom:1px solid #eeeeee;
+    background:url(../images/list/listPull_1.png) no-repeat 97% center;
+    background-size:6% 30%; 
+}
+/*.xiala a.btnS{
+    width:5%;
+    height:3rem;
+    display:inline-block;
+    float:right;
+    margin-right:3%;
+    
+}*/
+.xiala ul{
+    width:100%;
+    height:auto;
+    background:#fff;
+    position:absolute;
+    z-index:3;
+    display:none;
+}
+.xiala ul li{
+    width:97%;
+    height:3rem;
+    line-height:3rem;
+    background:#fff;
+    display:block;
+    padding-left:3%;
+    color:#999;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+.xiala ul li:hover{
+    color:#fff;
+    background:#f1594b;
+}
+.xiala ul li:active{
+    color:#fff;
+    background:#f1594b;
+}
+/*公司简介部分*/
+.companyProfile{
+    width:100%;
+    height:auto;
+    background:#fff;
+    padding-top:1.6rem;
+    padding-bottom:1rem;
+    margin-bottom:10rem;
+}
+.companyProfile img{
+    width:96%;
+    max-width:600px;
+    margin:0px auto;
+    display:block;
+}
+.companyProfile img.title{
+    margin-bottom:2rem;
+}
+.textMain{
+    width:100%;
+    height:auto;
+}
+.textMain p{
+    color:#333;
+    font-size:1.2rem;
+    line-height:1.6rem;
+    text-indent:2.4rem;
+    padding:0px 3%;
+    margin-top:2rem;
+}
+.textMain img{
+    margin:0.8rem auto;
+} 
+/*联系我们部分*/
+.contactUs{
+    width:100%;
+    background:#fff;
+    margin-bottom:12rem;
+}
+.contactUs .contactMethod{
+    width:96%;
+    height:3.6rem;
+    margin:0px auto;
+    line-height:3.6rem;
+    border-bottom:1px solid #eeeeee;
+}
+.contactUs .contactMethod span{
+    width:25%;
+    height:3.6rem;
+    display:block;
+    float:left;
+    color:#999;
+    font-size:1.4rem;
+}
+.contactUs .contactMethod b{
+    width:58%;
+    height:3.6rem;
+    float:left;
+    color:#333;
+    font-size:1.3rem;
+    padding-left:3%;
+    display:block;
+}
+.contactUs .contactMethod b.cz{
+    width:70%;
+}
+.contactUs .contactMethod a{
+    width:10%;
+    height:3.6rem;
+    float:right;
+}
+.contactUs .contactMethod a img{
+    width:69%;
+    height:auto;
+    display:block;
+    max-width:36px;
+    max-height:36px;
+    margin:30% auto 0% auto;
+}
+.bgdz{
+    width:96%;
+    height:auto;
+    margin:10px auto 0px auto;
+    line-height:2.2rem;
+}
+.bgdz span{
+    width:25%;
+    height:3.2rem;
+    display:block;
+    float:left;
+    color:#999;
+    font-size:1.4rem;
+}
+.bgdz b{
+    width:72%;
+    float:left;
+    color:#333;
+    font-size:1.3rem;
+    padding-left:3%;
+}
+.bgdz img{
+    width:99%;
+    height:auto;
+    max-width:600px;
+    max-height:318px;
+    display:block;
+    margin:10px auto 0px auto;
+    border:1px solid #cccccc;
+}
+/*微留言部分*/
+.messageMain{
+    width:96%;
+    height:auto;
+    padding:0.5rem 2% 5rem 2%;
+    background:#fff;
+    margin-bottom:10rem;
+}
+.messageMain input{
+    width:97%;
+    height:1.4rem;
+    line-height:1.6rem;
+    font-family:'Microsoft YaHei';
+    color:#333;
+    padding:0.9rem 0% 0.8rem 3%;
+    font-size:1.2rem;
+    border:1px solid #dedddd;
+    margin:0.5rem 0px;
+    font-weight:bold;
+}
+.messageMain input.submit{
+    width:100%;
+    height:3.4rem;
+    line-height:3.4rem;
+    color:#fff;
+    font-size:1.2rem;
+    background:#f15a4a;
+    margin:0.5rem 0px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:0.8rem;
+    padding:0;
+    border:none;
+}
+.messageMain input::-moz-placeholder,.messageMain textarea::-moz-placeholder{
+    color:#ccc;
+    font-weight:normal;
+}
+.messageMain input::-webkit-input-placeholder,.messageMain textarea::-webkit-input-placeholder{
+    color:#ccc;
+    font-weight:normal;
+}
+.messageMain textarea.textArea{
+    width:94%;
+    height:12rem;
+    line-height:1.4rem;
+    font-size:1.2rem;
+    font-family:'Microsoft YaHei';
+    color:#333;
+    padding:0.3rem 3%;
+    border:1px solid #dedddd;
+    font-weight:bold;
+}
+
+/*底部导航*/
+.foots{
+    width:100%;
+    height:4rem;
+    padding:5px 0px;
+    background:#fff;
+    margin-top:3rem;
+}
+.foot{
+    width:100%;
+    height:4rem;
+    position:fixed;
+    left:0;
+    bottom:0;
+    border-top:1px solid #e5e5e5;
+    padding:5px 0px;
+    background:#fff;
+}
+.foot a{
+    float:left;
+    text-align:center;
+    color:#999;
+    font-size:1rem;
+    position:relative;
+}
+.foot a.footNav{
+    width:18%;
+    height:auto;
+}
+.foot a.footNavOther{
+    width:28%;
+    height:auto;
+}
+.foot a.footNav img{
+    width:33%;
+    height:auto;
+}
+.foot a.footNavOther img{
+    width:37%;
+    height:auto;
+}
+.foot a img{
+    margin:0.6rem auto 0.5rem auto;
+    display:block;
+}
+.foot a b{
+    width:100%;
+    height:1.6rem;
+    margin-top:80%;
+}
+.foot a img.footNavO{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    top:-58%;
+    z-index:0;
+}
+a img.footNavt{
+    position:relative;
+    z-index:1;
+}
+
+/*右侧滑出导航菜单*/
+.righMenu{
+    width:70%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:100%;
+}
+.righMenu ul.toRight{
+    width:100%;
+    height:100%;
+    background:#202122;
+    padding-top:3rem;
+}
+.righMenu ul.toRight li{
+    width:95%;
+    height:3rem;
+    line-height:3rem;
+    font-size:1.4rem;
+    padding-left:5%;
+}
+.righMenu ul.toRight li.click{
+    background:#111;
+}
+.righMenu ul.toRight li:nth-of-type(even){
+    border-top:1px solid #272727;
+    border-bottom:1px solid #272727;
+}
+.righMenu ul.toRight li:hover,.righMenu ul.toRight li:active{
+    background:#111;
+}
+.righMenu ul.toRight li a{
+    width:100%;
+    height:3rem;
+    display:block;
+    color:#999999;
+}
+.righMenu ul.toRight li a i.foucs{
+    width:5%;
+    height:29%;
+    display:inline-block;
+    border:1px solid #e0e0e0;
+    border-radius:50%;
+    background:#e0e0e0;
+    margin:0px 6%;
+}
+.righMenu ul.toRight li a i.blur{
+    width:5%;
+    height:29%;
+    display:inline-block;
+    border:1px solid #e0e0e0;
+    border-radius:50%;
+    margin:0px 6%;
+}
+
+/*---------咨询页面-----------*/
+.askOnline{
+    width:96%;
+    height:auto;
+    padding:1rem 2%;
+    background:#fff;
+    box-shadow:0px 0px 2px #ececec;
+    margin-top:1rem;
+}
+ul.zixunList{
+    width:100%;
+    height:auto;
+}
+ul.zixunList li{
+    width:48%;
+    height:auto;
+    float:left;
+    margin:0rem 1%;
+    position:relative;
+}
+ul.zixunList li a img{
+    width:100%;
+    height:auto;
+    max-width:285px;
+    max-height:320px;
+}
+ul.zixunList li a span{
+    display:block;
+    height:2.4rem;
+    line-height:2.4rem;
+    padding-left:31%;
+    color:#fff;
+    font-size:1rem;
+    border-radius:3px;
+    background:#f15a4a url(../images/lianxi.png) no-repeat 20% center;
+    background-size:12% 54%;
+}
+/*------------在线咨询列表------------*/
+.askOnlineList{
+    width:96%;
+    height:auto;
+    padding:0rem 2%;
+    background:#fff;
+    box-shadow:0px 0px 2px #ececec;
+    margin-top:1rem;
+}
+.askOnlineList h2.zhuanj{
+    height:2.4rem;
+    line-height:2.4rem;
+    color:#333;
+    font-size:1.2rem;
+    padding-left:6%;
+    border-bottom:1px solid #0073bc;
+    background:url(../images/zhuanjia.png) no-repeat left center;
+    background-size:4% 56%;
+    margin-bottom:0.5rem;
+}
+.askOnlineList h2.xs{
+    height:2.4rem;
+    line-height:2.4rem;
+    color:#333;
+    font-size:1.2rem;
+    padding-left:8%;
+    border-bottom:1px solid #0073bc;
+    background:url(../images/xiaoshou.png) no-repeat left center;
+    background-size:6% 56%;
+    margin-bottom:0.5rem;
+}
+.askOnlineList h2.kf{
+    height:2.4rem;
+    line-height:2.4rem;
+    color:#333;
+    font-size:1.2rem;
+    padding-left:7%;
+    border-bottom:1px solid #0073bc;
+    background:url(../images/service.png) no-repeat left center;
+    background-size:5% 56%;
+    margin-bottom:0.5rem;
+}
+.askOnlineList a{
+    width:100%;
+    height:4rem;
+    display:inline-block;
+    line-height:4rem;
+    color:#333;
+    font-size:1.2rem;
+    border-bottom:1px solid #e6e6e6;
+    background:url(../images/lianxis.png) no-repeat right center;
+    background-size:7% 45%;
+}
+.askOnlineList a img{
+    display:inline-block;
+    width:10%;
+    height:65%;
+    max-width:65px;
+    max-height:65px;
+    vertical-align:middle;
+    margin-right:5%;
+    margin-top:;
+}
